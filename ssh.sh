@@ -72,3 +72,6 @@ apt autoremove -y
 
 # Zeige eine Erfolgsmeldung an
 echo "Alle verfügbaren Updates wurden erfolgreich installiert."
+
+# Neustart des Servers initiiren
+reboot
