@@ -49,18 +49,6 @@ echo "Starte den SSH-Server neu..."
 systemctl restart sshd
 echo "Der SSH-Server wurde erfolgreich neu gestartet."
 
-# Installiere die UFW Firewall
-echo "Installiere die UFW Firewall..."
-apt install -y ufw
-
-# Firewall-Konfiguration
-echo "Konfiguriere die Firewall..."
-ufw default allow outgoing
-ufw default deny incoming
-ufw allow 22
-ufw --force enable
-echo "Die Firewall wurde konfiguriert und aktiviert."
-
 # Aktualisiere die Paketlisten
 apt update
 
